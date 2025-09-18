@@ -55,3 +55,21 @@ Sends alerts via AWS SNS
 Pushes metrics to AWS CloudWatch
 
 Logs all activities locally
+
+
+
+
+### 2. Application Health Checker
+- Bash script: `scripts/application_health_checker.sh`
+- Checks if an application is running on port 4499
+- Prints "UP" if application responds with HTTP 200, else prints "DOWN"
+
+## Architecture
+
+![System Health Monitoring Architecture](images/Image.png)
+
+## Usage
+
+### System Health Monitoring
+```bash
+python3 scripts/system_health_monitor.py
